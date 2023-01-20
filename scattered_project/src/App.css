@@ -36,3 +36,91 @@
     transform: rotate(360deg);
   }
 }
+.honename{
+  display: flex;
+   justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 20px;
+  margin-left: 80px;
+}
+.Allfirstimg{
+  width:90%;
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+background-color: rgb(223, 223, 232);
+margin-top: 10px;
+gap: 5px;
+}
+
+.honeheading{
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.Allfirsdiv{
+  width:90%;
+  height: 250px;
+  border: 2px solid red;
+  margin: auto;
+}
+.Allphoneimg{
+  width:90%;
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  }
+.imgehere{
+  width: 80%;
+}
+.homesecpage{
+  display: flex;
+   justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 20px;
+  margin-left: 80px;
+  /* margin-top: 80px; */
+}
+.Allsecsdiv{ 
+  width:90%;
+  height: 350px;
+  border: 2px solid red;
+  margin: auto;
+  margin-top: 60px;
+}
+.Allsecimg{
+  width:90%;
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 10px; */
+  }
+  
+.homethrname{
+  display: flex;
+   justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 20px;
+  margin-left: 80px;
+  margin-top: 80px;
+}
+.Allthirdimg{
+  width:90%;
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  }

@@ -15,7 +15,7 @@ const AllRouters =()=>{
         <Route path="/" element={<Home/>}></Route>
         <Route path="electronic" element={<Electronic/>}></Route>
         <Route path="furniture" element={<Furniture/>}></Route>
-        <Route path="kidsAndToys/:" element={<KidsAndToys/>}></Route>
+        <Route path="kidsAndToys" element={<KidsAndToys/>}></Route>
         <Route path="mobile" element={<Mobile/>}></Route>
         <Route path="sports" element={<Sports/>}></Route>
         <Route path="login" element={<Loginpage/>}></Route>

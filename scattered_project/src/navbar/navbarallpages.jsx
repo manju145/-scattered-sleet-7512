@@ -33,25 +33,26 @@ import {
    return (
     <Box>
     <Flex
-    
+       border="8px"
+    width={"90%"}
+    margin="auto"
         bg={useColorModeValue('white', 'gray.800')}
       color={useColorModeValue('gray.600', 'white')}
-      minH={'60px'}
       py={{ base: 2 }}
       px={{ base: 4 }}
       borderBottom={1}
       borderStyle={'solid'}
-      borderColor={useColorModeValue('gray.200', 'gray.900')}
-      align={'center'}>
+      borderColor={useColorModeValue('black.200', 'black.900')}
+      align={'center'}
+      >
       <Flex
-       backgroundColor={"yellow"}
-        flex={{ base: 1, md: 'auto' }}
-        ml={{ base: -2 }}
-        display={{ base: 'flex', md: 'none' }}>
+             border="8px"
+        display={{ base: 'flex', md: 'none' }}
+        >
         <IconButton
           onClick={onToggle}
           icon={
-            isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
+            isOpen ? <CloseIcon w={3} h={5} /> : <HamburgerIcon w={5} h={5} />
           }
           variant={'ghost'}
           aria-label={'Toggle Navigation'}
@@ -60,53 +61,52 @@ import {
       
                <Stack
                  display={'flex'}
-                 gap="30%"
-           flex={{ base: 1, md: 0 }}
+                  gap="20%"
+                margin={"auto"}
+       
            justify={'flex-start'}
            justifyContent={'center'}
+           alignContent={'center'}
            direction={'row'}
-           spacing={6}>
-       <RouterLink to="/">
-       <Text
-             display={{ base: 'none', md: 'inline-flex' }}
-             fontSize={'sm'}
-             fontWeight={600}
-             color={'white'}
-             bg={'pink.400'}
-             href={'#'}
-             _hover={{
-               bg: 'pink.300',
-             }}>
-             Home
-           </Text>
-       </RouterLink>
-
-       <RouterLink to="mobile">
+           >
+         <RouterLink to="mobile">
            <Text
              display={{ base: 'none', md: 'inline-flex' }}
              fontSize={'sm'}
              fontWeight={600}
-             color={'white'}
-             bg={'pink.400'}
-             href={'#'}
+             color={'black'}
+                      href={'#'}
              _hover={{
-               bg: 'pink.300',
+               bg: 'gray.300',
              }}>
             Mobiles
            </Text>
            </RouterLink>
+
+           <RouterLink to="/">
+       <Text
+             display={{ base: 'none', md: 'inline-flex' }}
+             fontSize={'sm'}
+             fontWeight={600}
+             color={'black'}
+                         href={'#'}
+             _hover={{
+               bg: 'gray.300',
+             }}>
+           Home Appliances
+           </Text>
+       </RouterLink>
 
            <RouterLink to="/furniture">
            <Text
              display={{ base: 'none', md: 'inline-flex' }}
              fontSize={'sm'}
              fontWeight={600}
-             width="250%"
-             color={'white'}
-             bg={'pink.400'}
-             href={'#'}
+             width="150%"
+             color={'black'}
+                        href={'#'}
              _hover={{
-               bg: 'pink.300',
+               bg: 'gray.300',
              }}>
              Furniture and Decor
            </Text>
@@ -118,11 +118,10 @@ import {
              fontSize={'sm'}
              width="150%"
              fontWeight={600}
-             color={'white'}
-             bg={'pink.400'}
-             href={'#'}
+             color={'black'}
+                     href={'#'}
              _hover={{
-               bg: 'pink.300',
+               bg: 'gray.300',
              }}>
               Electronics
            </Text>
@@ -132,13 +131,12 @@ import {
            <Text
              display={{ base: 'none', md: 'inline-flex' }}
              fontSize={'sm'}
-             width="400%"
+             width="300%"
              fontWeight={600}
-             color={'white'}
-             bg={'pink.400'}
-             href={'#'}
+             color={'black'}
+                     href={'#'}
              _hover={{
-               bg: 'pink.300',
+               bg: 'gray.300',
              }}>
              Kids And Toys
            </Text>
@@ -150,11 +148,10 @@ import {
              fontSize={'sm'}
              width="350%"
              fontWeight={600}
-             color={'white'}
-             bg={'pink.400'}
-             href={'#'}
+             color={'black'}
+                    href={'#'}
              _hover={{
-                bg: 'pink.300',
+                bg: 'gray.300',
              
               }}
              >
@@ -170,48 +167,48 @@ import {
    );
  }
  
- const DesktopNav = () => {
-   const linkColor = useColorModeValue('gray.600', 'gray.200');
-   const linkHoverColor = useColorModeValue('gray.800', 'white');
-   const popoverContentBgColor = useColorModeValue('white', 'gray.800');
+//  const DesktopNav = () => {
+//    const linkColor = useColorModeValue('gray.600', 'gray.200');
+//    const linkHoverColor = useColorModeValue('gray.800', 'white');
+//    const popoverContentBgColor = useColorModeValue('white', 'gray.800');
  
-   return (
-     <Stack direction={'row'} spacing={4}>
+//    return (
+//      <Stack direction={'row'} spacing={4}>
     
-         <Box>
-           <Popover trigger={'hover'} placement={'bottom-start'}>
-             <PopoverTrigger>
-               <Link
-                 p={2}
-                  fontSize={'sm'}
-                 fontWeight={500}
-                 color={linkColor}
-                 _hover={{
-                   textDecoration: 'none',
-                   color: linkHoverColor,
-                 }}>
+//          <Box>
+//            <Popover trigger={'hover'} placement={'bottom-start'}>
+//              <PopoverTrigger>
+//                <Link
+//                  p={2}
+//                   fontSize={'sm'}
+//                  fontWeight={500}
+//                  color={linkColor}
+//                  _hover={{
+//                    textDecoration: 'none',
+//                    color: linkHoverColor,
+//                  }}>
                
-               </Link>
-             </PopoverTrigger>
+//                </Link>
+//              </PopoverTrigger>
  
            
-               <PopoverContent
-                 border={0}
-                 boxShadow={'xl'}
-                 bg={popoverContentBgColor}
-                 p={4}
-                 rounded={'xl'}
-                 minW={'sm'}>
-                 <Stack>
+//                <PopoverContent
+//                  border={0}
+//                  boxShadow={'xl'}
+//                  bg={popoverContentBgColor}
+//                  p={4}
+//                  rounded={'xl'}
+//                  minW={'sm'}>
+//                  <Stack>
                  
-                 </Stack>
-               </PopoverContent>
+//                  </Stack>
+//                </PopoverContent>
             
-           </Popover>
-         </Box>
+//            </Popover>
+//          </Box>
   
-     </Stack>
-   );
- };
+//      </Stack>
+//    );
+//  };
  
  
