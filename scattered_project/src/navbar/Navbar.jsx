@@ -18,6 +18,7 @@ import {
    useColorModeValue,
    useBreakpointValue,
    useDisclosure,
+   Input,
    
  } from '@chakra-ui/react';
  import {
@@ -34,14 +35,18 @@ import {
    return (
      <Box>
        <Flex
-         bg={useColorModeValue('white', 'gray.800')}
-         color={useColorModeValue('gray.600', 'white')}
-         minH={'60px'}
-         py={{ base: 2 }}
-         px={{ base: 4 }}
+        border="8px"
+        width={"90%"}
+        margin="auto"
+        height={"80px"}
+        //  bg={useColorModeValue('white', 'gray.800')}
+        //  color={useColorModeValue('gray.600', 'white')}
+        //  minH={'60px'}
+        //  py={{ base: 2 }}
+        //  px={{ base: 4 }}
          borderBottom={1}
          borderStyle={'solid'}
-         borderColor={useColorModeValue('gray.200', 'gray.900')}
+         borderColor={useColorModeValue('black.200', 'black.900')}
          align={'center'}>
          <Flex
            flex={{ base: 1, md: 'auto' }}
@@ -59,7 +64,7 @@ import {
 
          <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
          <img src="https://cdn.shortpixel.ai/spai/w_341+q_lossless+ret_img+to_webp/https://myapnabazar.in/wp-content/uploads/2020/08/final.png" alt=""
-         width="60px"
+         width="100px"
         //  height="100px"
          />
  
@@ -74,31 +79,18 @@ import {
            justifyContent={'center'}
            direction={'row'}
            spacing={6}>
-       <RouterLink to="/">
-       <Text
-             display={{ base: 'none', md: 'inline-flex' }}
-             fontSize={'sm'}
-             fontWeight={600}
-             color={'white'}
-             bg={'pink.400'}
-             href={'#'}
-             _hover={{
-               bg: 'pink.300',
-             }}>
-           Home Appliances
-           </Text>
-       </RouterLink>
-
+    
+ 
                  <RouterLink to="/login">
            <Text
              display={{ base: 'none', md: 'inline-flex' }}
              fontSize={'sm'}
+             width="50px"
              fontWeight={600}
-             color={'white'}
-             bg={'pink.400'}
-             href={'#'}
+             color={'black'}
+                    href={'#'}
              _hover={{
-               bg: 'pink.300',
+               bg: 'gray.300',
              }}>
               Login
            </Text>
