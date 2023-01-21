@@ -36,7 +36,7 @@ import {
      <Box>
        <Flex
         border="8px"
-        width={"90%"}
+        width={"100%"}
         margin="auto"
         height={"80px"}
         //  bg={useColorModeValue('white', 'gray.800')}

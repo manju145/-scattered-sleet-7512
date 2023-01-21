@@ -1,12 +1,10 @@
 import React from "react";
 import '../App.css';
-
-function HomePage() {
-    const redirect = () => {
-        window.location.href = '/nextpage'
-     }
+import { History } from "@remix-run/router";
+function NextPage() {
     return (
         <>
+        <h1>helloooooooooooooooooooooooooooooooooohhhhhhhhhhhhhhhhhhhhhhhoooooooooooooooooo</h1>
             <h1 className="honename">Most Popular Products</h1>
             <div className="Allfirstimg">
                 <div> <img src="https://teja10.kuikr.com/escrow/assets/image/assured_landing_page/all_electonics_desktop.png" alt="" /></div>
@@ -23,8 +21,8 @@ function HomePage() {
                 <div className="Allphoneimg">
                     <div className="imgehere">
                         <img src="https://teja8.kuikr.com/i4/20220928/Apple-iPad-Air-5th-Gen---2022-Model---109-inch-8GB-Ram-64GB-Storage-VB201705171774173-ak_LWBP629353248-1664362736.jpeg" />
-                        <h1 className="price">₹12,999</h1>
-                        <button className="buttn" onClick={redirect}>View</button>
+                        <h1 className="price">₹7,999</h1>
+                        <button className="buttn">View</button>
                     </div>
                     <div className="imgehere">
                         <img src="https://teja9.kuikr.com/i5/20230111/dinner-set-available-available-available-available-VB201705171774173-ak_LWBP358356589-1673425640.jpeg" />
@@ -234,4 +232,4 @@ function HomePage() {
     )
 }
 
-export default HomePage;
+export default NextPage;

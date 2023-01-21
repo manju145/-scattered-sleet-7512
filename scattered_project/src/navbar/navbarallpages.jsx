@@ -34,7 +34,7 @@ import {
     <Box>
     <Flex
        border="8px"
-    width={"90%"}
+    width={"100%"}
     margin="auto"
         bg={useColorModeValue('white', 'gray.800')}
       color={useColorModeValue('gray.600', 'white')}

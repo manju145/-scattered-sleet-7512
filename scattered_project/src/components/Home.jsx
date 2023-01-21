@@ -2,7 +2,16 @@ import React from "react";
 
 function Home() {
     return(
-        <h1>Home Appliances</h1>
+        <h1>Home Applianceskkkkkkkkkll
+           hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+           ghhhhhkjhllkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+           hgvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvhk
+           kjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+           hvjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjk
+           jhvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv 
+            
+            
+            llllllllllllllllllllllllllll</h1>
     )
 }
 
