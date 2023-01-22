@@ -389,6 +389,7 @@ width: 100%;
     margin-top: 30px;
     font-size: 20px;
   }
+
   .eletronicalldiv{
     width: 100%;
     display: grid;
@@ -443,4 +444,30 @@ color: blue;
   }
   .imgsport>img{
   width: 80%;
+  }
+  .signup{
+    display: grid;
+width: 30%;
+height: 450px;
+     border: 10px solid rgb(255, 17, 0);
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  }
+  .signup>h1{
+    text-decoration: underline;
+    font-size: 35px;
+    color: blue;
+  }
+.signup>input{
+margin: auto;
+border: 1px solid rgb(15, 3, 2);
+  }
+  .signup>button{
+   
+    border: 2px solid rgb(15, 3, 2);
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
   }
