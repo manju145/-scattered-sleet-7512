@@ -1,31 +1,63 @@
-import React from "react";
-import { useState } from "react";
-export const AuthContext=React.createContext();
+import React from "react"
+import { useEffect } from "react"
+import { useState } from "react"
 
 function AuthContextProvider({children}) {
-    const[state,setState]=useState({
-      isAuth:false,
-      token:null  
+    const [loading,setLoading] = useState(false)
+    const [error, setError] = useState(false)
+    const [notes, setNotes] = useState("")
+  useEffect(() => {
+    setLoading(true)
+    fetch("http://localhost:8080/notes", {
+        headers : {
+            "Authorization" : `Bearer ${localStorage.getItem("psctoken")}`
+        }
     })
-    const loginUser=(token)=>{
-        setState({
-           ...state,
-           isAuth:true,
-           token 
-        })
-    }
-    const logoutUser=()=>{
-       setState({
-        ...state,
-        isAuth:false,
-        token:null
-       }) 
-    }  
-return(
-    <AuthContext.Provider value={{authState:state,loginUser,logoutUser}}>
+    .then((res) => res.json())
+    .then((res) => {
+        console.log(res)
+        setNotes(res)
+        setLoading(false)
+    })
+    .catch((err) => {
+        setError(true)
+        setLoading(false)
+    })
+  }, [])
+  
 
-        {children}
-    </AuthContext.Provider>
+  const deleteNote = (noteID) => {
+    fetch(`http://localhost:8080/notes/delete/${noteID}`, {
+        method : "DELETE",
+        headers : {
+            "Authorization" : `Bearer ${localStorage.getItem("psctoken")}`
+        }
+    })
+  }
+return(
+    <div>
+        <h1>Notes :</h1>
+        {
+            loading && "Loading....."
+        }
+        {
+            error && "something went wrong...."
+        }
+        {
+            notes && notes.length > 0 && notes.map((note) => {
+                return (
+                    <div>
+                        <p>{note._id}</p>
+                        <p>{note.title}</p>
+                        <p>{note.note}</p>
+                        <button onClick={()=>deleteNote(note._id)}>Delete</button>
+                        <hr/>
+                    </div>
+                )
+            })
+        }
+
+    </div>
 )
 }
 export default AuthContextProvider;

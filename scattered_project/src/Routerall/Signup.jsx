@@ -1,22 +1,10 @@
-// import React from "react";
+import React from "react";
+import { useState } from "react";
+export const AuthContext=React.createContext();
 
-
-// function Loginpage() {
-//     return(
-//         <h1>Loginpage</h1>
-//     )
-// }
-
-// export default Loginpage;
-
-
-
-import React from "react"
-import { useState } from "react"
-
-const Loginpage = () => {
+function Signup() {
     const redirect = () => {
-        window.location.href = '/'
+        window.location.href = '/login'
      }
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
@@ -27,7 +15,7 @@ const Loginpage = () => {
             password
         }
        
-        fetch("http://localhost:3000/login", {
+        fetch("http://localhost:3000/signup", {
             method : "POST",
             body : JSON.stringify(payload),
             headers : {
@@ -35,19 +23,16 @@ const Loginpage = () => {
             }
         })
         .then((res) => res.json())
-        .then((res) => {
-            console.log(res)
-            localStorage.setItem("psctoken",res.token)
-        })
+        .then((res) => console.log(res))
         .catch((err) => console.log(err))
     }
     return(
         <div>
-            <h1>Login here</h1>
+            <h1>Sign up here</h1>
             <input type="text" placeholder="email" value={email} onChange={(e) => setEmail(e.target.value)}></input>
             <input type="password" placeholder="password" value={password} onChange={(e) => setPassword(e.target.value)}></input>
-            <button onClick={redirect}>Submit</button>
+            <button  onClick={redirect}>Submit</button>
         </div>
     )
 }
-export default Loginpage
+export default Signup;

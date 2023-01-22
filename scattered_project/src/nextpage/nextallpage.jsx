@@ -4,7 +4,6 @@ import { History } from "@remix-run/router";
 function NextPage() {
     return (
         <>
-        <h1>helloooooooooooooooooooooooooooooooooohhhhhhhhhhhhhhhhhhhhhhhoooooooooooooooooo</h1>
             <h1 className="honename">Most Popular Products</h1>
             <div className="Allfirstimg">
                 <div> <img src="https://teja10.kuikr.com/escrow/assets/image/assured_landing_page/all_electonics_desktop.png" alt="" /></div>

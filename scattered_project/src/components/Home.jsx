@@ -1,17 +1,10 @@
 import React from "react";
-
+import HomePage from '../homepage/homepage';
 function Home() {
     return(
-        <h1>Home Applianceskkkkkkkkkll
-           hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-           ghhhhhkjhllkjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-           hgvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvhk
-           kjhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-           hvjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjk
-           jhvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv 
-            
-            
-            llllllllllllllllllllllllllll</h1>
+        <h1>
+           <HomePage></HomePage>
+        </h1>
     )
 }
 
