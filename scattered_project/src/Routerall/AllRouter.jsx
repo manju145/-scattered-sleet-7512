@@ -8,7 +8,7 @@ import Loginpage from "../components/Login";
 import Mobile from "../components/Mobile";
 import Sports from "../components/Sports";
 import NextPage from "../nextpage/nextallpage";
-import Signup from "./Signup";
+
 
 const AllRouters =()=>{
     return <Routes>
@@ -19,7 +19,6 @@ const AllRouters =()=>{
         <Route path="mobile" element={<Mobile/>}></Route>
         <Route path="sports" element={<Sports/>}></Route>
         <Route path="login" element={<Loginpage/>}></Route>
-        <Route path="signup" element={<Signup/>}></Route>
         <Route  path="nextpage" element={<NextPage/>}></Route>
     </Routes>
 }
