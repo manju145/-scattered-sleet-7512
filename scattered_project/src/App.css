@@ -42,6 +42,7 @@
   align-items: flex-start;
   font-size: 20px;
   margin-left: 80px;
+  margin-top: 20px;
 }
 .Allfirstimg{
   width:90%;
@@ -82,9 +83,12 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 .imgehere{
   width: 80%;
+  height: auto;
+  margin-bottom: 30px;
+  padding-bottom: 5%;
  }
 .imgehere:hover{
-  border: 2px solid red;
+  border: 2px solid rgb(51, 0, 255);
 }
 .imgehere>img{
 width: 100%;
@@ -134,10 +138,9 @@ width: 100%;
   justify-content: center;
   align-items: center;
   /* margin-top: 60px; */
+  
   }
-  .Allthirdimg>img{
-    width: 100%;
-  }
+
   .threediv{
     width:90%;
     height: 400px;
@@ -162,7 +165,7 @@ width: 100%;
     margin: auto;
     justify-content: center;
     align-items: center;
-    /* margin-top: 60px; */
+     margin-top: 20px; 
     }
     .fourdiv{
       width:90%;
@@ -180,6 +183,9 @@ width: 100%;
   align-items: flex-start;
   margin-top: 10px;
   font-size: 20px;
+  }
+.price:hover{
+  color: blue;
 }
 .buttn{
   display: flex;
@@ -201,7 +207,7 @@ width: 100%;
 .footermainbox{
   display: flex;
   justify-content: space-around;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 450px;
   width: 100%;
   margin: auto;
@@ -210,7 +216,7 @@ width: 100%;
 }
 .allhone{
   display: flex;
-  margin-left: 30px;
+  margin-left: 0px;
   margin-top: 30px;
   }
 .firstdiv{
@@ -240,10 +246,11 @@ width: 100%;
   font-size: 12px;
   margin-top: 25px;
   color: #74777e;
+  text-align: left;
 }
 .allsechone{
   display: flex;
-  margin-left: 20px;
+  margin-left: 0px;
   margin-top: 35px;
   font-size: 15px;
 }
@@ -262,3 +269,178 @@ width: 100%;
  width: 60%;
  margin-left: 30px;
 }
+/* Mobile css */
+.forimg{
+width: 100%;
+margin-left: 10px;
+/* border: 2px solid rgb(39, 39, 45) */
+}
+.forimg>img{
+ width: 50%; 
+}
+.thery{
+  display: grid;
+  width: 90%;
+  height: 200px;
+  grid-template-columns: repeat(2,1fr);
+  /* border: 3px solid rgb(52, 52, 207); */
+  margin: auto;
+  margin-top: 10px;
+  gap: 35px;
+}
+.boxfirst{
+  width: 100%;
+  /* border: 2px solid rgb(39, 39, 45) */
+}
+.boxfirst>h1{
+  display: flex;
+  font-size: 20px;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.boxsec{
+  width: 100%;
+  /* border: 2px solid rgb(39, 39, 45) */
+}
+.boxsec>h1{
+  display: flex;
+  font-size: 20px;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.theryptag{
+  text-align: left;
+  color: #74777e;
+}
+.cust{
+width: 90%;
+/* border: 3px solid red; */
+margin: auto;
+margin-top: 30px;
+}
+.hone{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+.furnit{
+  width:90%;
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  justify-content: center;
+  align-items: center;
+background-color: rgb(223, 223, 232);
+gap: 15px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+margin: auto;
+margin-top: 20px;
+}
+.furniturdiv{
+  width: 70%;
+  margin-left: 10px;
+  background-color: rgb(244, 244, 227);
+  margin: auto;
+}
+.furniturdiv>img{
+width: 100%;
+}
+
+.furnidimg{
+  width:90%;
+  /* height: 300px; */
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(2);
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+   /* border: 3px solid red; */
+  }
+  .furthreediv{
+    width:90%;
+       /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 30px;
+ padding-bottom: 20px;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .homfurname{
+    display: flex;
+    justify-self: start;
+    margin-left: 70px;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+
+  .honetagheader{
+    margin-left: -100px;
+  }
+  .eletronicdiv{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-bottom: 15px;
+  }
+  .eletronichone{
+    display: flex;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .eletronicalldiv{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2);
+    /* border: 1px solid red; */
+        margin: auto;
+        margin-top: 10px;
+        
+  }
+  .eletronicimg{
+    margin-top: 20px;
+  }
+  .kidhead{
+    display: flex;
+    width: 90%;
+    height: 300px;
+      /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 25px;
+  }
+  .eletronhthree:hover{
+color: blue;
+  }
+  .sportdiv{
+    width: 90%;
+    height: 420px;
+    /* border: 1px solid red; */
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .Allsportimg{
+    width:90%;
+    height: 380px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    align-items: center;
+     /* border: 1px solid red; */
+     margin-top: 20px; 
+     margin: auto;
+  }
+  .imgsport{
+    width: 70%;
+    height: auto;
+    margin-bottom: 30px;
+    padding-bottom: 9%;
+    /* border: 2px solid rgb(51, 0, 255); */
+   }
+  .imgsport:hover{
+    border: 2px solid rgb(51, 0, 255);
+  }
+  .imgsport>img{
+  width: 80%;
+  }

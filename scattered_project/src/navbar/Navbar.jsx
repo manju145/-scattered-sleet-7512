@@ -96,6 +96,22 @@ import {
            </Text>
            </RouterLink>
 
+           
+           <RouterLink to="/signup">
+           <Text
+             display={{ base: 'none', md: 'inline-flex' }}
+             fontSize={'sm'}
+             width="50px"
+             fontWeight={600}
+             color={'black'}
+                    href={'#'}
+             _hover={{
+               bg: 'gray.300',
+             }}>
+            Signup
+           </Text>
+           </RouterLink>
+
            </Stack>
        </Flex>
  

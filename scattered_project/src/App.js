@@ -1,6 +1,5 @@
 
 import './App.css';
-import HomePage from './homepage/homepage';
 import Navbar from './navbar/Navbar';
 import Navbarallpage from './navbar/navbarallpages';
 
@@ -11,8 +10,7 @@ function App() {
     <div className="App">
      <Navbar></Navbar>
      <Navbarallpage></Navbarallpage>
-     <HomePage></HomePage>
-     <AllRouters></AllRouters>
+       <AllRouters></AllRouters>
      
     
     </div>

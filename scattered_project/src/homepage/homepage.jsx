@@ -9,13 +9,26 @@ function HomePage() {
         <>
             <h1 className="honename">Most Popular Products</h1>
             <div className="Allfirstimg">
-                <div> <img src="https://teja10.kuikr.com/escrow/assets/image/assured_landing_page/all_electonics_desktop.png" alt="" /></div>
-                <div> <img src="https://teja10.kuikr.com/escrow/assets/image/certified_landing_page/led-tv.png" alt="" /></div>
-                <div> <img src="https://teja10.kuikr.com/escrow/assets/image/certified_landing_page/laptops.png" alt="" /></div>
-                <div> <img src="https://teja10.kuikr.com/escrow/assets/image/certified_landing_page/electronics/air-conditioner.png" alt="" /></div>
-                <div> <img src="https://teja10.kuikr.com/escrow/assets/image/certified_landing_page/electronics/speakers.png" alt="" /></div>
-                <div> <img src="https://teja10.kuikr.com/escrow/assets/image/assured_landing_page/Gaming_Consoles_desktop.png" alt="" /></div>
+                <div><img src="https://teja10.kuikr.com/escrow/assets/image/assured_landing_page/all_electonics_desktop.png" alt="" />
+                <h1 className="honetagheader">All Electronic</h1>
+                </div>
+                <div> <img src="https://teja10.kuikr.com/escrow/assets/image/certified_landing_page/led-tv.png" alt="" />
+                <h1 className="honetagheader">TVs</h1>
+                </div>
+                <div> <img src="https://teja10.kuikr.com/escrow/assets/image/certified_landing_page/laptops.png" alt="" />
+                <h1 className="honetagheader">Laptops</h1>
+                </div>
+                <div> <img src="https://teja10.kuikr.com/escrow/assets/image/certified_landing_page/electronics/air-conditioner.png" alt="" />
+                <h1 className="honetagheader">Air Conditioners</h1>
+                </div>
+                <div> <img src="https://teja10.kuikr.com/escrow/assets/image/certified_landing_page/electronics/speakers.png" alt="" />
+                <h1 className="honetagheader">Speakers</h1>
+                </div>
+                <div> <img src="https://teja10.kuikr.com/escrow/assets/image/assured_landing_page/Gaming_Consoles_desktop.png" alt="" />
+                <h1 className="honetagheader">Gaming Consoles</h1>
+                </div>
             </div>
+
             <h1 className="honeheading">Buy and Sell from 1200+ Cities Across India</h1>
 
             <div className="Allfirsdiv">
@@ -28,23 +41,23 @@ function HomePage() {
                     </div>
                     <div className="imgehere">
                         <img src="https://teja9.kuikr.com/i5/20230111/dinner-set-available-available-available-available-VB201705171774173-ak_LWBP358356589-1673425640.jpeg" />
-                        <h1 className="price">₹7,999</h1>
-                        <button className="buttn">View</button>
+                        <h1 className="price">₹75,999</h1>
+                        <button className="buttn" onClick={redirect}>View</button>
                     </div>
                     <div className="imgehere">
                         <img src="https://teja10.kuikr.com/i5/20230114/Nikon-D5600-Brand-New-Camera-call-me-nd-whatsapp-VB201705171774173-ak_LWBP262696618-1673673880.jpeg" />
                         <h1 className="price">₹7,999</h1>
-                        <button className="buttn">View</button>
+                        <button className="buttn" onClick={redirect}>View</button>
                     </div>
                     <div className="imgehere">
                         <img src="https://teja8.kuikr.com/i6/20221016/Johnson-class-cycle-VB201705171774173-ak_LWBP1837104920-1665905886.jpeg" />
-                        <h1 className="price">₹7,999</h1>
-                        <button className="buttn">View</button>
+                        <h1 className="price">₹45,999</h1>
+                        <button className="buttn" onClick={redirect}>View</button>
                     </div>
                     <div className="imgehere">
                         <img src="https://teja10.kuikr.com/i6/20230118/sony-cybershot-camera-silver-color-VB201705171774173-ak_WBP1842886982-1674048057.png" />
-                        <h1 className="price">₹7,999</h1>
-                        <button className="buttn">View</button>
+                        <h1 className="price">₹9,999</h1>
+                        <button className="buttn" onClick={redirect}>View</button>
                     </div>
                 </div>
             </div>
@@ -54,28 +67,28 @@ function HomePage() {
                 <div className="Allsecimg">
                     <div className="imgehere">
                         <img src="https://teja8.kuikr.com/i5/20230119/Call---WhatsApp-7645827922-All-Types-of-Apple-i-Phones-11-original--phone-offer-available-all-over-India-VB201705171774173-ak_LWBP184996837-1674125060.png" />
-                        <h1 className="price">₹7,999</h1>
-                        <button className="buttn">View</button>
+                        <h1 className="price">₹13,999</h1>
+                        <button className="buttn" onClick={redirect}>View</button>
                     </div>
                     <div className="imgehere">
                         <img src="https://teja9.kuikr.com/i6/20230118/Call---WhatsApp-8961307390-All-Types-of-Apple-i-Phones-14-imported-phone-offer-available-all-over-India-VB201705171774173-ak_LWBP948385802-1674066105.jpeg" />
-                        <h1 className="price">₹7,999</h1>
-                        <button className="buttn">View</button>
+                        <h1 className="price">₹12,999</h1>
+                        <button className="buttn" onClick={redirect}>View</button>
                     </div>
                     <div className="imgehere">
                         <img src="https://teja8.kuikr.com/i6/20230119/All-iPhones-available-call-8800-986080-Cash-on-delivery-Brand-new-iPhone-12-Pro-Max--iPhone-13-pro-max-VB201705171774173-ak_LWBP375898028-1674110502.png" />
                         <h1 className="price">₹7,999</h1>
-                        <button className="buttn">View</button>
+                        <button className="buttn" onClick={redirect}>View</button>
                     </div>
                     <div className="imgehere">
                         <img src="https://teja9.kuikr.com/i4/20221217/SONY-PlayStation-4-Slim-500GB-With---1-Console---2-CDs---Six-Months-Replacement-Warranty--Bill-Box-Available--Stock-Limited-Available-VB201705171774173-ak_LWBP657893223-1671250587.jpeg" />
-                        <h1 className="price">₹7,999</h1>
-                        <button className="buttn">View</button>
+                        <h1 className="price">₹5,999</h1>
+                        <button className="buttn" onClick={redirect}>View</button>
                     </div>
                     <div className="imgehere">
                         <img src="https://teja9.kuikr.com/i5/20230114/brand-new-packed-model-GIC-18E-VB201705171774173-ak_WBP1508060107-1673708552.png" />
-                        <h1 className="price">₹7,999</h1>
-                        <button className="buttn">View</button>
+                        <h1 className="price">₹18,999</h1>
+                        <button className="buttn" onClick={redirect}>View</button>
                     </div>
                 </div>
             </div>
@@ -85,28 +98,28 @@ function HomePage() {
                 <div className="Allthirdimg">
                     <div className="imgehere">
                         <img src="https://teja9.kuikr.com/i5/20230119/maintain-the-highest-condition--VB201705171774173-ak_LWBP1352266231-1674121921.png" />
-                        <h1 className="price">₹7,999</h1>
-                        <button className="buttn">View</button>
+                        <h1 className="price">₹5,999</h1>
+                        <button className="buttn" onClick={redirect}>View</button>
                     </div>
                     <div className="imgehere">
                         <img src="https://teja8.kuikr.com/i4/20230118/Hero-Sprint-Voltage-FS-26T--Height-152CM---173-CM-5ft-to-58ft--VB201705171774173-ak_LWBP113756160-1674054435.jpeg" />
-                        <h1 className="price">₹7,999</h1>
-                        <button className="buttn">View</button>
+                        <h1 className="price">₹9,999</h1>
+                        <button className="buttn" onClick={redirect}>View</button>
                     </div>
                     <div className="imgehere">
                         <img src="https://teja8.kuikr.com/i4/20230118/Used-Baby-pram-working-fine-VB201705171774173-ak_LWBP1823305554-1674059458.jpeg" />
                         <h1 className="price">₹7,999</h1>
-                        <button className="buttn">View</button>
+                        <button className="buttn" onClick={redirect}>View</button>
                     </div>
                     <div className="imgehere">
                         <img src="https://teja9.kuikr.com/i6/20230111/Office-Table-6ft-x-6ft-VB201705171774173-ak_LWBP345659192-1673425194.png" />
-                        <h1 className="price">₹7,999</h1>
-                        <button className="buttn">View</button>
+                        <h1 className="price">₹10,999</h1>
+                        <button className="buttn" onClick={redirect}>View</button>
                     </div>
                     <div className="imgehere">
                         <img src="https://teja10.kuikr.com/i4/20230112/MO84696-52322--MEN-S-BRANDED-WATCHES--MEN-S-WATCHES--BRANDED-WATCHES---REPLICA-WATCHES--PREMIUM-WATCHES--AAA-WATCHES--7A-WATCHES--IMPORTED-WATCHES---COD---ALL-INDIAMO84696-523-VB201705171774173-ak_LWBP1184536377-1673529916.jpeg" />
                         <h1 className="price">₹7,999</h1>
-                        <button className="buttn">View</button>
+                        <button className="buttn" onClick={redirect}>View</button>
                     </div>
                 </div>
             </div>
@@ -116,28 +129,28 @@ function HomePage() {
                 <div className="Allfourdimg">
                     <div className="imgehere">
                         <img src="https://teja9.kuikr.com/i4/20221217/Call-Me-86012-29838-SONY-PlayStation-4-Slim-1TB--1-Console-2-CDs--Jet-Black--Replacement-Warranty--Bill-Box-Available-VB201705171774173-ak_LWBP657893223-1671250587.jpeg" />
-                        <h1 className="price">₹7,999</h1>
-                        <button className="buttn">View</button>
+                        <h1 className="price">₹17,999</h1>
+                        <button className="buttn" onClick={redirect}>View</button>
                     </div>
                     <div className="imgehere">
                         <img src="https://teja8.kuikr.com/i5/20230114/Nikon-D5600-Brand-New-Camera-call-me-nd-whatsapp-VB201705171774173-ak_LWBP262696618-1673673880.jpeg" />
-                        <h1 className="price">₹7,999</h1>
-                        <button className="buttn">View</button>
+                        <h1 className="price">₹12,999</h1>
+                        <button className="buttn" onClick={redirect}>View</button>
                     </div>
                     <div className="imgehere">
                         <img src="https://teja9.kuikr.com/i6/20230118/--7428905949---WhatsApp-me-Samsung-7-kg-Fully-Automatic-Top-Loading-WA70A4002GS-TL---warranty-VB201705171774173-ak_WBP1542515420-1674031627.png" />
-                        <h1 className="price">₹7,999</h1>
-                        <button className="buttn">View</button>
+                        <h1 className="price">₹13,999</h1>
+                        <button className="buttn" onClick={redirect}>View</button>
                     </div>
                     <div className="imgehere">
                         <img src="https://teja8.kuikr.com/i5/20230113/DG-NET-HD-WEBCAM-WITH-MICROPHONE--AUTOFOCUS-FOR-VIDEO-CALLING--CONFERENCING--RECORDING-FOR-USE-IN-PC--LAPTOP--DESKTOP--ONLINE-CLASSES--2-DIFFERENT-PORT-CONNECTING-CABLES-MULTI-VB201705171774173-ak_LWBP1791307282-1673626027.jpeg" />
-                        <h1 className="price">₹7,999</h1>
-                        <button className="buttn">View</button>
+                        <h1 className="price">₹17,999</h1>
+                        <button className="buttn" onClick={redirect}>View</button>
                     </div>
                     <div className="imgehere">
                         <img src="https://teja10.kuikr.com/i4/20230112/MO84696-52322--MEN-S-BRANDED-WATCHES--MEN-S-WATCHES--BRANDED-WATCHES---REPLICA-WATCHES--PREMIUM-WATCHES--AAA-WATCHES--7A-WATCHES--IMPORTED-WATCHES---COD---ALL-INDIAMO84696-523-VB201705171774173-ak_LWBP1184536377-1673529916.jpeg" />
-                        <h1 className="price">₹7,999</h1>
-                        <button className="buttn">View</button>
+                        <h1 className="price">₹15,999</h1>
+                        <button className="buttn" onClick={redirect}>View</button>
                     </div>
                 </div>
             </div>
