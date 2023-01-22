@@ -30,14 +30,14 @@ const Loginpage = () => {
         .catch((err) => console.log(err))
     }
     return(
-   
+  
         <div className="logform">
             <h1>Login here</h1>
             <input type="text" placeholder=" Inter email" value={email} onChange={(e) => setEmail(e.target.value)}></input>
             <input type="password" placeholder=" Inter password" value={password} onChange={(e) => setPassword(e.target.value)}></input>
             <button onClick={redirect}>Submit</button>
         </div>
-      
+    
     )
 }
 export default Loginpage
