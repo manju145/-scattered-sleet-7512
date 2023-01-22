@@ -1,18 +1,6 @@
-// import React from "react";
-
-
-// function Loginpage() {
-//     return(
-//         <h1>Loginpage</h1>
-//     )
-// }
-
-// export default Loginpage;
-
-
-
 import React from "react"
 import { useState } from "react"
+import '../App.css';
 
 const Loginpage = () => {
     const redirect = () => {
@@ -42,12 +30,14 @@ const Loginpage = () => {
         .catch((err) => console.log(err))
     }
     return(
-        <div className="signup">
+   
+        <div className="logform">
             <h1>Login here</h1>
             <input type="text" placeholder=" Inter email" value={email} onChange={(e) => setEmail(e.target.value)}></input>
             <input type="password" placeholder=" Inter password" value={password} onChange={(e) => setPassword(e.target.value)}></input>
             <button onClick={redirect}>Submit</button>
         </div>
+      
     )
 }
 export default Loginpage
